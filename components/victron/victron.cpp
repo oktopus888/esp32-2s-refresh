@@ -90,7 +90,7 @@ void VictronComponent::loop() {
   const uint32_t now = millis();
   if ((state_ > 0) && (now - last_transmission_ >= 1)) {
     // last transmission too long ago. Reset RX index.
-    ESP_LOGW(TAG, "Last transmission too long ago");
+    // ESP_LOGW(TAG, "Last transmission too long ago");
     state_ = 0;
   }
 
